@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %} About Us {% endblock %}
+{% block content %}
+<!doctype html>
+<html>
+<head>
+    <title>QNimate Slider</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <div class="slider-holder">
+        <span id="slider-image-1"></span>
+        <span id="slider-image-2"></span>
+        <span id="slider-image-3"></span>
+        <div class="image-holder">
+            <img src="http://e3.365dm.com/17/08/768x432/promo326912549_4073045.jpg" class="slider-image" />
+            <img src="https://metrouk2.files.wordpress.com/2016/12/104265726.jpg?w=748&h=469&crop=1" class="slider-image" />
+            <img src="https://www.google.com/search?q=man+utd&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiOv_H-sJLWAhWGZiYKHZYiA_4Q_AUIDCgD&biw=1280&bih=703#imgdii=0ltg5Gwhk9JMTM:&imgrc=3atru3e1cv-yWM:" class="slider-image" />
+        </div>
+        <div class="button-holder">
+            <a href="#slider-image-1" class="slider-change"></a>
+            <a href="#slider-image-2" class="slider-change"></a>
+            <a href="#slider-image-3" class="slider-change"></a>
+        </div>
+    </div>
+</body>
+</html>
+{% endblock %}

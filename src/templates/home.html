@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+{% block content %}
+<!DOCTYPE html> 
+<html class="no-js" lang="en" > 
+<head> 
+<meta charset="utf-8" /> 
+<title>rotating background image</title> 
+<style> 
+body { 
+background: url("http://hd.wallpaperswide.com/thumbs/blue_grid-t2.jpg")  no-repeat center center fixed; 
+-webkit-background-size: cover; 
+-moz-background-size: cover; 
+-o-background-size: cover; 
+background-size: cover; 
+} 
+</style> 
+</head> 
+<body> 
+<h2 class="w3-center" style="color: Orange" >Adult Football League</h2>
+<script type="text/javascript"> 
+(function () { 
+    var images = ['http://e3.365dm.com/17/08/768x432/promo326912549_4073045.jpg', 'https://metrouk2.files.wordpress.com/2016/12/104265726.jpg?w=748&h=469&crop=1']; 
+    var body = window.document.body; 
+    var counter = 0; 
+    window.setInterval(function() { 
+        if( counter >= images.length ) { 
+            counter = 0; 
+        }; 
+        var image = "url(" + images[counter] + ")"; 
+        counter++; 
+        body.style.backgroundImage = image; 
+      
+    }, 1000); 
+})(); 
+</script> 
+</body> 
+</html>  
+{% endblock %}

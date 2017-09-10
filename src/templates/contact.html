@@ -1,0 +1,141 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" type="text/css"/>
+<style media="screen" type="text/css">
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    color: #000;
+    background: #dde;
+}
+
+a:link {
+    color: #357;
+}
+
+a:visited {
+    color: #537;
+}
+
+
+table, th, td {
+    margin: .8em 3em .8em 3em;
+    border: 1px solid black;
+    font-size: 1.1em;
+    }
+    th, td {
+            padding: 1.3em;
+    }
+
+th {
+    background: #bcd;
+}
+
+p {
+    margin: .8em 3em .8em 3em;
+    font-size: 1.2em;
+    padding: 0;
+    line-height: 140%;
+}
+
+ol, ul, dl, li {
+    margin: 1.6em 1em .8em 1em;
+    font-size: 1.2em;
+}
+
+h1,h2,h3,h4,h5 {
+    font-weight: bold;
+}
+
+h1 {
+    margin: 28px .8em 2em .8em;
+    text-align: center;
+    font-weight: 300;
+    font-size: 2.4em;
+    color: #339;
+    background-color: #cfc;
+}
+
+h2 {
+    font-size: 2.0em;
+    margin: 1.6em 2em 1em 2em;
+    color: #356;
+}
+
+h2.subhead {
+    font-weight:
+    normal;
+    margin-top:
+    0;
+}
+
+h3 {
+    font-size: 1.8em;
+    margin: 1.6em 2.6em 1em 2.6em;
+    color: #642;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 1.5em;
+    margin: 1.3em 3em 1em 3em;
+    color: #339;
+    font-weight: bold;
+}
+
+h5 {
+    font-size: 1.3em;
+    margin: 1.3em 4em 1em 4em;
+    color: #600;
+    font-weight: bold;
+
+}
+
+td.vim-key {
+    color: #633;
+    font-style: italic;
+}
+
+
+</style>
+<body>
+
+<h2 class="w3-center" style="color: Orange" >Adult Football League</h2>
+
+<div class="w3-content w3-section" style="max-width: none" >
+  <img class="mySlides" src="http://e3.365dm.com/17/08/768x432/promo326912549_4073045.jpg" style="width: 100%" >
+  <img class="mySlides" src="https://metrouk2.files.wordpress.com/2016/12/104265726.jpg?w=748&h=469&crop=1" style="width:100%">
+  <img class="mySlides" src="http://e3.365dm.com/17/08/768x432/promo326912549_4073045.jpg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+var images = ['http://e3.365dm.com/17/08/768x432/promo326912549_4073045.jpg', 'https://metrouk2.files.wordpress.com/2016/12/104265726.jpg?w=748&h=469&crop=1']; 
+    var body = window.document.body; 
+
+</body>
+</html>
+
+{% endblock %}
